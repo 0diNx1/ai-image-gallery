@@ -1,6 +1,6 @@
 const IMAGE_CONFIG = {
   folder: "images/",
-  images: ["image1.png", "image2.png", "image3.png", "image4.png", "image5.png", "image6.png"]
+  images: ["image1.png", "image2.png", "image3.png", "image4.png", "image5.png", "image6.png","image7.png","image8.png"]
 };
 
 let allImages = [];
