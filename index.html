@@ -1,48 +1,55 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Image Gallery</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream AI Gallery ✨</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>✨ AI Image Gallery</h1>
-            <p class="subtitle">Explore stunning AI-generated artwork</p>
-        </header>
-
-        <div class="filters">
-            <button class="filter-btn active" data-filter="all">All Images</button>
-            <button class="filter-btn" data-filter="popular">Most Liked</button>
-            <button class="filter-btn" data-filter="recent">Recent</button>
-        </div>
-
-        <div class="gallery" id="gallery">
-            <div class="loading">
-                <div class="spinner"></div>
-                <p>Loading amazing images...</p>
-            </div>
-        </div>
+  <nav class="navbar">
+    <h1>✨ Dream AI Gallery</h1>
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search images...">
+      <button id="themeToggle">🌙</button>
     </div>
+  </nav>
 
-    <div class="modal" id="imageModal">
-        <div class="modal-overlay" onclick="closeModal()"></div>
-        <div class="modal-content">
-            <button class="close-btn" onclick="closeModal()">×</button>
-            <img id="modalImage" src="" alt="">
-            <div class="modal-info">
-                <h3 id="modalTitle"></h3>
-                <button class="like-btn-large" id="modalLikeBtn" onclick="toggleLikeModal()">
-                    <span id="modalHeart">🤍</span>
-                    <span id="modalLikeCount">0</span> Likes
-                </button>
-            </div>
-        </div>
+  <div class="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="popular">🔥 Popular</button>
+    <button class="filter-btn" data-filter="recent">🕓 Recent</button>
+  </div>
+
+  <main class="gallery" id="gallery">
+    <div class="loading-grid">
+      <div class="skeleton"></div>
+      <div class="skeleton"></div>
+      <div class="skeleton"></div>
     </div>
+  </main>
 
-    <script src="script.js"></script>
+  <!-- Modal -->
+  <div class="modal" id="imageModal">
+    <div class="modal-overlay" onclick="closeModal()"></div>
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal()">×</button>
+      <img id="modalImage" src="" alt="">
+      <div class="modal-info">
+        <h3 id="modalTitle"></h3>
+        <button class="like-btn-large" id="modalLikeBtn" onclick="toggleLikeModal()">
+          <span id="modalHeart">🤍</span>
+          <span id="modalLikeCount">0</span> Likes
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Made with ❤️ by Herox </p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
