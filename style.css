@@ -51,7 +51,7 @@ body {
   padding: 10px;
   border-radius: 50%;
   cursor: pointer;
-  color: white;
+  color: black;
   transition: 0.3s;
 }
 .controls button:hover {
@@ -188,7 +188,7 @@ body {
 footer {
   text-align: center;
   padding: 30px 0;
-  color: rgba(255,255,255,0.6);
+  color: cyan;
 }
 
 /* Animations */
